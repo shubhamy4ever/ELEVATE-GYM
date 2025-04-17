@@ -104,7 +104,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
   return (
     <motion.div 
       className={`bg-white rounded-xl overflow-hidden shadow-lg relative ${
-        isPopular ? 'transform scale-105 md:translate-y-0 border-2 border-[#FF3366] mt-5' : ''
+        isPopular ? 'transform scale-105 md:translate-y-0 border-2 border-[#FF3366] mt-8 pt-4' : ''
       }`}
       variants={fadeIn}
       whileHover="hover"
@@ -112,7 +112,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
       animate="rest"
     >
       {isPopular && (
-        <div className="bg-[#FF3366] absolute -top-3 left-1/2 transform -translate-x-1/2 py-1 px-4 rounded-full shadow-lg z-10 whitespace-nowrap">
+        <div className="bg-[#FF3366] absolute -top-5 left-1/2 transform -translate-x-1/2 py-1 px-6 rounded-full shadow-lg z-10 whitespace-nowrap">
           <span className="text-white font-montserrat text-sm font-bold">MOST POPULAR</span>
         </div>
       )}
