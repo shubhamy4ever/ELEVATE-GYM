@@ -120,7 +120,7 @@ export default function ContactSection() {
                             {...field}
                             type="email" 
                             placeholder="Your email address" 
-                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all"
+                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all bg-white text-gray-900"
                             disabled={isSubmitting}
                             required
                           />
@@ -142,7 +142,7 @@ export default function ContactSection() {
                           {...field}
                           type="tel" 
                           placeholder="Your phone number" 
-                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all"
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all bg-white text-gray-900"
                           disabled={isSubmitting}
                         />
                       </FormControl>
@@ -159,7 +159,7 @@ export default function ContactSection() {
                       <FormLabel className="block text-[#333333] font-montserrat font-medium mb-2">I'm interested in</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value} disabled={isSubmitting}>
                         <FormControl>
-                          <SelectTrigger className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all">
+                          <SelectTrigger className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all bg-white text-gray-900">
                             <SelectValue placeholder="Select an option" />
                           </SelectTrigger>
                         </FormControl>

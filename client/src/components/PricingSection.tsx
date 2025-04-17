@@ -110,7 +110,6 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
       whileHover="hover"
       initial="rest"
       animate="rest"
-      variants={cardHover}
     >
       {isPopular && (
         <div className="glass absolute -top-4 left-1/2 transform -translate-x-1/2 py-1 px-4 rounded-full">
