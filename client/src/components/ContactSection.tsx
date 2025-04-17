@@ -100,7 +100,7 @@ export default function ContactSection() {
                           <Input 
                             {...field}
                             placeholder="Your name" 
-                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all"
+                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all bg-white text-gray-900"
                             disabled={isSubmitting}
                             required
                           />
@@ -187,7 +187,7 @@ export default function ContactSection() {
                           {...field}
                           rows={4} 
                           placeholder="Tell us about your fitness goals" 
-                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all"
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#00C9FF] focus:ring-2 focus:ring-[#00C9FF] focus:ring-opacity-25 transition-all bg-white text-gray-900"
                           disabled={isSubmitting}
                           required
                         />
@@ -228,7 +228,7 @@ export default function ContactSection() {
               </div>
             </div>
             
-            <div className="glass p-8 rounded-lg m-6 relative z-10">
+            <div className="bg-black/80 backdrop-blur-md p-8 rounded-2xl m-6 relative z-10 shadow-xl border border-gray-800">
               <h3 className="text-white font-montserrat font-bold text-2xl mb-6">FIND US</h3>
               <div className="space-y-6">
                 <div className="flex items-start">

@@ -34,15 +34,15 @@ export default function Header() {
   ];
   
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrollY > 50 ? 'py-2 bg-primary' : 'py-4'}`}>
-      <div className="glass px-6 py-4">
+    <header className={`fixed w-[95%] md:w-[90%] mx-auto left-0 right-0 top-4 z-50 transition-all duration-300 rounded-2xl backdrop-blur-lg ${scrollY > 50 ? 'bg-black/85 shadow-lg' : 'bg-black/70'}`}>
+      <div className="px-4 md:px-6 py-4">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/">
-            <a className="flex items-center">
+            <div className="flex items-center">
               <h1 className="text-white font-montserrat font-bold text-2xl md:text-3xl tracking-tight">
                 <span className="text-[#FF3366]">ELE</span><span className="text-[#00C9FF]">VATE</span>
               </h1>
-            </a>
+            </div>
           </Link>
           
           {/* Desktop Navigation */}
@@ -70,7 +70,7 @@ export default function Header() {
           {/* Join Button */}
           <a 
             href="#pricing" 
-            className="hidden md:block bg-[#FF3366] hover:bg-opacity-90 text-white font-montserrat font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105"
+            className="hidden md:block bg-[#FF3366] hover:bg-opacity-90 text-white font-montserrat font-bold py-3 px-8 rounded-xl shadow-md transition-all transform hover:scale-105 hover:shadow-xl"
           >
             JOIN NOW
           </a>
@@ -79,13 +79,13 @@ export default function Header() {
       
       {/* Mobile Menu */}
       <motion.div 
-        className="md:hidden bg-primary"
+        className="md:hidden bg-black/90 rounded-b-2xl overflow-hidden"
         initial={{ height: 0, opacity: 0 }}
         animate={{ 
           height: isMenuOpen ? 'auto' : 0,
           opacity: isMenuOpen ? 1 : 0
         }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         {isMenuOpen && (
           <div className="container mx-auto py-4 px-6 flex flex-col space-y-4">
@@ -101,7 +101,7 @@ export default function Header() {
             ))}
             <a 
               href="#pricing" 
-              className="bg-[#FF3366] hover:bg-opacity-90 text-white font-montserrat font-bold py-3 px-8 rounded-full text-center transition-all transform hover:scale-105 w-full"
+              className="bg-[#FF3366] hover:bg-opacity-90 text-white font-montserrat font-bold py-3 px-8 rounded-xl text-center transition-all transform hover:scale-105 w-full"
               onClick={closeMenu}
             >
               JOIN NOW
