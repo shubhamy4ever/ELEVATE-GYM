@@ -3,7 +3,7 @@ import { fadeIn, slideInLeft, buttonHover } from "@/lib/animations";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="w-full h-screen relative bg-primary overflow-hidden flex items-center">
+    <section id="hero" className="w-full h-screen relative bg-primary overflow-hidden flex items-center pt-20">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-transparent opacity-80 z-10"></div>
         <img 

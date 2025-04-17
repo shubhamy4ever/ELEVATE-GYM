@@ -34,7 +34,7 @@ export default function Header() {
   ];
   
   return (
-    <header className={`fixed w-[95%] md:w-[90%] mx-auto left-0 right-0 top-4 z-50 transition-all duration-300 rounded-2xl backdrop-blur-lg ${scrollY > 50 ? 'bg-black/85 shadow-lg' : 'bg-black/70'}`}>
+    <header className={`fixed w-[95%] md:w-[90%] mx-auto left-0 right-0 top-6 z-50 transition-all duration-300 rounded-2xl backdrop-blur-lg ${scrollY > 50 ? 'bg-black/85 shadow-lg' : 'bg-black/70'}`}>
       <div className="px-4 md:px-6 py-4">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/">

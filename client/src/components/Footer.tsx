@@ -9,11 +9,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/">
-              <a className="inline-block mb-6">
+              <div className="inline-block mb-6">
                 <h2 className="font-montserrat font-bold text-3xl tracking-tight">
                   <span className="text-[#FF3366]">ELE</span><span className="text-[#00C9FF]">VATE</span>
                 </h2>
-              </a>
+              </div>
             </Link>
             <p className="text-gray-400 mb-6">
               Transforming bodies and minds through premium fitness experiences since 2015.
