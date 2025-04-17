@@ -29,7 +29,7 @@ export default function ProgramsSection() {
       id: 3,
       title: "POWER YOGA",
       description: "Dynamic yoga flows combine strength, flexibility and mindfulness for a transformative practice.",
-      imageUrl: "https://images.unsplash.com/photo-1593810450967-f9c6652b9511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       duration: "60 MIN",
       level: "All Levels"
     },
